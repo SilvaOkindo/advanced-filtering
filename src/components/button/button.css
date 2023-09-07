@@ -1,0 +1,14 @@
+.btn {
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    background-color: rgb(238, 245, 245);
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 400;
+    transition: all .2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: rgb(28, 155, 155);
+    color: rgb(255, 255, 255);
+}

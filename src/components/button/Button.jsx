@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import './Button.css'
 
-const Button = () => {
+const Button = ({text, value, onClickHandler}) => {
   return (
-    <div>Button</div>
-  )
+    <button className='btn' onClick={onClickHandler} value={value}>{text}</button>
+  );
 }
 
 export default Button

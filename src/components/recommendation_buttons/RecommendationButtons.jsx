@@ -1,9 +1,21 @@
+/* eslint-disable react/prop-types */
 import './recommendation_buttons.css'
+import Button from '../button/Button'
 
-const RecommendationButtons = () => {
+const RecommendationButtons = ({handleClick}) => {
+
+
+  const buttons =['Nike', 'Adidas', 'Puma', 'Vans'];
+
+
   return (
-    <div>RecommendationButtons</div>
+    <div className='recomm-btns'>
+      <Button value='' text='All products' onClickHandler={handleClick}/>
+      {buttons.map((btn, index) => {
+        return <Button key={index} text={btn} value={btn} onClickHandler={handleClick}/>
+      })}
+    </div>
   )
 }
 
-export default RecommendationButtons
+export default RecommendationButtons 

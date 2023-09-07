@@ -1,8 +1,11 @@
+/* eslint-disable react/prop-types */
 import './products.css'
 
-const Products = () => {
+const Products = ({result}) => {
   return (
-    <div>Products</div>
+    <div>
+      <div className='products'>{result}</div>
+    </div>
   )
 }
 

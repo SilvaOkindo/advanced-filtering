@@ -1,0 +1,23 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 2px solid rgb(43, 42, 42, .3);
+}
+
+nav input {
+    background-color: rgb(234, 243, 243);
+    padding: .5rem 1rem;
+    border-radius: 6px;
+    color: black;
+
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: rgb(61, 160, 160);
+    cursor: pointer;
+}

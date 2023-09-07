@@ -1,0 +1,78 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-right: 2px solid #ccc;
+    margin-left: 2rem;
+    padding-top: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.sidebar__label-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    font-size: 12px;
+}
+
+.sidebar__label-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.sidebar__title {
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.sidebar__label-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.sidebar__label-container input:checked ~ .checkmark {
+    background-color: #2196f3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.sidebar__label-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.sidebar__label-container .checkmark:after {
+    top: 4px;
+    left: 4px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+}
+
+.all {
+    background: linear-gradient(red, blue);
+}
